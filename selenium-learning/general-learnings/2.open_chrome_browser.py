@@ -22,6 +22,9 @@ driver_chrome = webdriver.Chrome(options=Options())
 
 # Open Google.com in Chrome Browser
 driver_chrome.get("https://www.google.com")
+driver_chrome.maximize_window()
+driver_chrome.minimize_window()
+print(driver_chrome.title)
 
 # Close the Chrome Browser
 driver_chrome.quit()

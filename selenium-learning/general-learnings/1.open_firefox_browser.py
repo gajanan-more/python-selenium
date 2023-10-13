@@ -22,6 +22,9 @@ driver_firefox = webdriver.Firefox(executable_path=geckodriver_path)
 
 # Open Google.com in Firefox Browser
 driver_firefox.get("https://www.google.com")
+driver_firefox.maximize_window()
+driver_firefox.minimize_window()
+print(driver_firefox.title)
 
 # Close the Firefox Browser
 driver_firefox.quit()
